@@ -13,6 +13,9 @@ const config = {
 			fallback: null,
 			precompress: false
 		}),
+		paths: {
+			base: '/duydang2311.github.io'
+		},
 		prerender: {
 			enabled: true,
 			default: true,

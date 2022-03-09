@@ -1,16 +1,12 @@
-<script lang="ts">
-	import { base } from '$app/paths';
-</script>
-
 <footer>
 	<hr />
 	<nav>
 		<ul>
 			<li>
-				<a href="{base}/about">about</a>
+				<a href="/about">about</a>
 			</li>
 			<li>
-				<a href="{base}/contact">contact</a>
+				<a href="/contact">contact</a>
 			</li>
 		</ul>
 	</nav>

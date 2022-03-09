@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { base } from '$app/paths';
 	const mappingNavigation = ['/', '/blog'];
 </script>
 
@@ -12,7 +11,7 @@
 				{#each mappingNavigation as i}
 					{#if i !== $page.url.pathname}
 						<li>
-							<a href={`${base}${i}`}>{i.substring(1) || 'home'}</a>
+							<a href={i}>{i.substring(1) || 'home'}</a>
 						</li>
 					{/if}
 				{/each}

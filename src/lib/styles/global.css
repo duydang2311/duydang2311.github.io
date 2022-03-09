@@ -6,6 +6,7 @@
 
 html {
 	scrollbar-gutter: stable;
+	margin: 1em;
 }
 
 body {
@@ -26,7 +27,7 @@ footer {
 }
 
 main {
-	min-height: calc(100vh - 13em);
+	min-height: calc(100vh - 13em - 2em);
 	/* background: yellow; */
 	font-size: 1em;
 }

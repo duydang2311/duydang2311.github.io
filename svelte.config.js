@@ -14,7 +14,8 @@ const config = {
 			precompress: false
 		}),
 		paths: {
-			base: '/duydang2311.github.io'
+			base: '/duydang2311.github.io',
+			assets: '/duydang2311.github.io'
 		},
 		prerender: {
 			enabled: true,

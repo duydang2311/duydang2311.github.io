@@ -13,9 +13,6 @@ const config = {
 			fallback: null,
 			precompress: false
 		}),
-		paths: {
-			base: ''
-		},
 		prerender: {
 			enabled: true,
 			default: true

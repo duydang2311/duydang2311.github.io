@@ -10,7 +10,8 @@ html {
 
 body {
 	overflow-wrap: break-word;
-	margin: 0 20%;
+	max-width: 720px;
+	margin: 0 auto;
 	font-size: 16px;
 }
 
@@ -75,4 +76,8 @@ hr {
 	border: none;
 	border-top: 1px solid;
 	margin: 0;
+}
+
+a {
+	text-decoration: none;
 }

@@ -18,10 +18,7 @@
 	}
 	ul {
 		list-style-type: none;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: right;
-		align-content: flex-end;
+		text-align: right;
 	}
 
 	ul li {

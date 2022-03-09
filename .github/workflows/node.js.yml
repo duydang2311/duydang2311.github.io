@@ -28,7 +28,7 @@ jobs:
     - name: Deploy pages
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        touch build/.nojekyll && gh-pages -d build -t true -u "github-actions-bot <support+actions@github.com>"
+        npm run build && touch build/.nojekyll && gh-pages -d build -t true -u "github-actions-bot <support+actions@github.com>"
       if: ${{ github.ref == 'refs/heads/main' }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,10 +1,31 @@
+@import '@fontsource/roboto-mono';
+@import '@fontsource/inter';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: theme('fontFamily.display');
-    }
-
+	:root {
+		font-family: theme('fontFamily.sans');
+	}
+	code {
+		font-family: theme('fontFamily.mono');
+		font-weight: 400;
+		background-color: theme('colors.green.50');
+		border-radius: theme('borderRadius.DEFAULT');
+		padding-inline: theme('padding.1');
+		user-select: all;
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+	pre {
+		border: 1px solid theme('colors.gray.200');
+		background-color: theme('colors.gray.50') !important;
+		& > code {
+			user-select: auto;
+		}
+	}
 }

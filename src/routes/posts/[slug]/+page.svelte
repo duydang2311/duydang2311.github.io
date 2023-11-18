@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let data: any;
+	export let data: any;
 </script>
 
 <svelte:head>
@@ -8,18 +8,17 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article>
+<article class="w-auto">
 	<hgroup class="prose">
 		<h1>{data.meta.title}</h1>
 		<p>Published at {data.meta.date}</p>
 	</hgroup>
-    <div>
-        {#each data.meta.categories as category}
-            <span>&num;{category}</span>
-        {/each}
-    </div>
+	<div>
+		{#each data.meta.categories as category}
+			<span>&num;{category}</span>
+		{/each}
+	</div>
 	<div class="prose">
 		<svelte:component this={data.content} />
 	</div>
 </article>
-

@@ -3,8 +3,8 @@ title: Object serialization in alt:V
 description: Object serialization in alt:V
 date: '2023-11-18'
 categories:
-    - alt:V
-    - csharp
+  - alt:V
+  - csharp
 published: true
 ---
 
@@ -19,7 +19,7 @@ When it comes to custom serialization, there are two things to implement:
 
 ## IWritable
 
-The implementation is quite simple and straightforward. I recommend you to read the official alt:V article at https://docs.altv.mp/cs/articles/getting-started/serialization.html. 
+The implementation is quite simple and straightforward. I recommend you to read the official alt:V article at https://docs.altv.mp/cs/articles/getting-started/serialization.html.
 
 ## IMValueConvertible
 

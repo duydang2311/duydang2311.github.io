@@ -7,27 +7,27 @@ import shiki from 'shiki';
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
-  extensions: ['.svelte', '.md'],
-	preprocess: [vitePreprocess(), mdsvex({
-    extensions: ['.md'],
-    highlight: {
-      highlighter: async (code, lang = 'text') => {
-        const highlighter = await shiki.getHighlighter({ theme: 'vitesse-light' })
-        const html = escapeSvelte(highlighter.codeToHtml(code, { lang }))
-        return `{@html \`${html}\` }`
-      }
-    },
-    layout: {
-      _: './src/lib/components/mdsvex/layout.svelte'
-    },
-  })],
+	extensions: ['.svelte', '.md'],
+	preprocess: [
+		vitePreprocess(),
+		mdsvex({
+			extensions: ['.md'],
+			highlight: {
+				highlighter: async (code, lang = 'text') => {
+					const highlighter = await shiki.getHighlighter({ theme: 'vitesse-light' });
+					const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
+					return `{@html \`${html}\` }`;
+				}
+			},
+			layout: {
+				_: './src/lib/components/mdsvex/layout.svelte'
+			}
+		})
+	],
 
 	kit: {
-		adapter: adapter(),
-    paths: {
-      base: process.env.NODE_ENV === 'production' ? '/duydang2311.github.io' : '',
-    }
-	},
+		adapter: adapter()
+	}
 };
 
 export default config;

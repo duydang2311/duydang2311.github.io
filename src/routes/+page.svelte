@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Post from './Post.svelte';
+
+	export let data;
+</script>
+
+<h1>Posts</h1>
+<ul class="mt-2 space-y-4">
+	{#each data.posts as post}
+		<li>
+			<Post {post} />
+		</li>
+	{/each}
+</ul>

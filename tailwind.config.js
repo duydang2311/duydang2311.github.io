@@ -8,6 +8,15 @@ export default {
 				sans: ['Inter', 'ui-system', 'sans-serif'],
 				mono: ["'Roboto Mono'", 'monospace']
 			},
+			fontSize: {
+				h1: '1.476rem',
+				h2: '1.383rem',
+				h3: '1.296rem',
+				h4: '1.215rem',
+				h5: '1.138rem',
+				h6: '1.067rem',
+				p: '1rem'
+			},
 			typography: {
 				DEFAULT: {
 					css: {

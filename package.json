@@ -37,6 +37,8 @@
 	"dependencies": {
 		"@fontsource/inter": "^5.0.15",
 		"@fontsource/roboto-mono": "^5.0.15",
+		"date-fns": "^2.30.0",
+		"motion": "^10.16.4",
 		"shiki": "^0.14.5"
 	}
 }

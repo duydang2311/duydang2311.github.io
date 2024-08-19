@@ -1,0 +1,10 @@
+:root {
+  --color-bg: oklch(96.49% 0.0045 78.3);
+  --color-fg: oklch(26.66% 0.003 17.34);
+}
+
+:root {
+  --theme-base-1: var(--color-bg);
+  --theme-base-fg-1: var(--color-fg);
+  --theme-base-fg-2: color-mix(in oklch, var(--color-fg) 80%, var(--color-bg));
+}

@@ -7,4 +7,6 @@
   --theme-base-1: var(--color-bg);
   --theme-base-fg-1: var(--color-fg);
   --theme-base-fg-2: color-mix(in oklch, var(--color-fg) 80%, var(--color-bg));
+  --theme-base-fg-3: color-mix(in oklch, var(--color-fg) 60%, var(--color-bg));
+  --theme-base-fg-4: color-mix(in oklch, var(--color-fg) 40%, var(--color-bg));
 }

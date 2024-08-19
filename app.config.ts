@@ -4,6 +4,7 @@ export default defineConfig({
   server: {
     preset: 'static',
     prerender: {
+      routes: ['/', '/portfolio'],
       crawlLinks: true,
     },
   },

@@ -1,6 +1,6 @@
 export function SkillsSection() {
   return (
-    <div class="min-h-screen [scroll-snap-align:start]">
+    <div id="etc-skills" class="min-h-screen [scroll-snap-align:start] py-4">
       <h2>/etc/skills</h2>
     </div>
   );

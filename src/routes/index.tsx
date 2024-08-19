@@ -1,18 +1,13 @@
 import { Title } from '@solidjs/meta';
-import { RouteSectionProps } from '@solidjs/router';
+import { A } from '@solidjs/router';
 
 export default function Home() {
   return (
     <main class="flex">
       <Title>Hello World</Title>
-      <h1>Hello world!</h1>
-      <p>
-        Visit{' '}
-        <a href="https://start.solidjs.com" target="_blank">
-          start.solidjs.com
-        </a>{' '}
-        to learn how to build SolidStart apps.
-      </p>
+      <A href="/portfolio" end>
+        Portfolio
+      </A>
     </main>
   );
 }

@@ -21,7 +21,10 @@
     "node": ">=18"
   },
   "devDependencies": {
+    "clsx": "^2.1.1",
     "fluid-tailwind": "^1.0.3",
-    "postcss-preset-env": "^10.0.2"
+    "motion": "^10.18.0",
+    "postcss-preset-env": "^10.0.2",
+    "tailwind-merge": "^2.5.2"
   }
 }

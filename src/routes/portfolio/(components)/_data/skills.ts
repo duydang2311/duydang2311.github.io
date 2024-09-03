@@ -1,14 +1,21 @@
-export const skills = [
+export const skills: {
+  group: string;
+  items: {
+    id: string;
+    light: () => Promise<typeof import('*.svg')>;
+    dark?: () => Promise<typeof import('*.svg')>;
+  }[];
+}[] = [
   {
     group: 'Programming Languages',
     items: [
       {
-        text: 'C#',
-        image: () => import('~/lib/assets/images/skills/csharp.svg'),
+        id: 'csharp',
+        light: () => import('~/lib/assets/images/skills/csharp.svg'),
       },
       {
-        text: 'TypeScript',
-        image: () => import('~/lib/assets/images/skills/typescript.svg'),
+        id: 'ts',
+        light: () => import('~/lib/assets/images/skills/typescript.svg'),
       },
     ],
   },
@@ -16,8 +23,16 @@ export const skills = [
     group: 'Infrastructure',
     items: [
       {
-        text: 'C#',
-        image: () => import('~/lib/assets/images/skills/csharp.svg'),
+        id: 'aws',
+        light: () => import('~/lib/assets/images/skills/aws.svg'),
+      },
+      {
+        id: 'github',
+        light: () => import('~/lib/assets/images/skills/github.svg'),
+      },
+      {
+        id: 'vercel',
+        light: () => import('~/lib/assets/images/skills/vercel.svg'),
       },
     ],
   },
@@ -25,8 +40,12 @@ export const skills = [
     group: 'Dev Tools',
     items: [
       {
-        text: 'C#',
-        image: () => import('~/lib/assets/images/skills/csharp.svg'),
+        id: 'git',
+        light: () => import('~/lib/assets/images/skills/git.svg'),
+      },
+      {
+        id: 'vscode',
+        light: () => import('~/lib/assets/images/skills/vscode.svg'),
       },
     ],
   },

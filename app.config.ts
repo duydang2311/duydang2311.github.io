@@ -13,7 +13,7 @@ export default defineConfig({
   vite: {
     plugins: [
       solidSvg({
-        defaultAsComponent: true,
+        defaultAsComponent: false,
         svgo: {
           enabled: true,
           svgoConfig: { plugins: ['preset-default', 'removeDimensions'] },

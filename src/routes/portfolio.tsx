@@ -15,9 +15,14 @@ export default function Portfolio({ children }: { children: JSX.Element }) {
             <h2>/home/duyda</h2>
           </div>
           <nav>
-            <ul class="flex gap-2">
+            <ul class="flex gap-4">
               <li>
                 <a href="#etc-skills">Skills</a>
+              </li>
+              <li>
+                <a href="https://github.com/duydang2311" target="_blank">
+                  GitHub
+                </a>
               </li>
             </ul>
           </nav>

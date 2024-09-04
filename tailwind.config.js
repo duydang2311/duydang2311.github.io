@@ -16,10 +16,10 @@ export default {
       colors: {
         base: {
           1: 'var(--theme-base-1)',
-          'fg-1': 'var(--theme-base-fg-1)',
-          'fg-2': 'var(--theme-base-fg-2)',
-          'fg-3': 'var(--theme-base-fg-3)',
-          'fg-4': 'var(--theme-base-fg-4)',
+          'fg-1': 'oklch(from var(--theme-base-fg-1) l c h / <alpha-value>)',
+          'fg-2': 'oklch(from var(--theme-base-fg-2) l c h / <alpha-value>)',
+          'fg-3': 'oklch(from var(--theme-base-fg-3) l c h / <alpha-value>)',
+          'fg-4': 'oklch(from var(--theme-base-fg-4) l c h / <alpha-value>)',
         },
       },
       animation: {

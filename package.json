@@ -21,10 +21,12 @@
     "node": ">=18"
   },
   "devDependencies": {
+    "@ark-ui/solid": "^3.10.0",
     "clsx": "^2.1.1",
     "fluid-tailwind": "^1.0.3",
     "motion": "^10.18.0",
     "postcss-preset-env": "^10.0.2",
-    "tailwind-merge": "^2.5.2"
+    "tailwind-merge": "^2.5.2",
+    "vite-plugin-solid-svg": "^0.8.1"
   }
 }

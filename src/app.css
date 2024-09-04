@@ -84,4 +84,33 @@
   :root {
     scroll-snap-type: y mandatory;
   }
+
+  [data-scope='tooltip'][data-part='content'][data-state='open'] {
+    animation: fadeIn 150ms ease-out;
+  }
+
+  [data-scope='tooltip'][data-part='content'][data-state='closed'] {
+    animation: fadeOut 150ms ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      @apply scale-90;
+    }
+    to {
+      opacity: 1;
+      @apply scale-100;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      @apply scale-95;
+    }
+  }
 }
